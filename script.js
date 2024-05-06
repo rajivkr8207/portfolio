@@ -2,6 +2,12 @@ const menu = document.getElementById("menu");
 const close = document.getElementById("close");
 const navlink = document.getElementById("navlink");
 gsap.registerPlugin();
+
+const preload = document.getElementById("loading");
+function reloaded() {
+  preload.style.display = "none";
+}
+
 const tl = gsap.timeline();
 menu.addEventListener("click", () => {
   gsap.to("header nav #menu", {

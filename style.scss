@@ -15,10 +15,19 @@ body {
 }
 body {
     scroll-behavior: smooth;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     background: #35155d;
 }
-
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    background-image: url("./img/load.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
 .cursor_movement {
     position: fixed;
     top: 0;

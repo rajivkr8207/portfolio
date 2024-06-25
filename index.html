@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -22,7 +22,7 @@
     <header>
       <nav>
         <div>
-          <a class="logo" href="">Portfolio</a>
+          <a class="logo" href="/">Rajiv</a>
         </div>
         <div>
           <ul id="navlinks">
@@ -93,11 +93,11 @@
             <h1>A Frontend Developer!</h1>
             <p>
               Rajiv, excels in HTML, CSS, JavaScript, and React. He's delving
-              into full-stack development, learning Node.js. Passionate about
+              into full-stack development, learning Django . Passionate about
               innovation, he crafts dynamic digital experiences, always seeking
               to enhance his skills.
             </p>
-            <button>Explore more</button>
+           
           </div>
         </div>
       </div>
@@ -107,72 +107,71 @@
       <h1 class="project_title">Pro<span>ject</span></h1>
 
       <div class="project_card">
+
         <div class="card">
           <div class="card_img">
-            <a href="#"
+            <a target="blank" href="https://www.mini-market.in"
               ><div class="card_img_pic">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="https://startupbubble.news/wp-content/uploads/2023/07/boitumelo-6SZYEy4b5d0-unsplash-1024x577.jpg"
                   alt="Placeholder Image"
                 />
               </div>
-              <div class="card_img_text">Lorem ipsum dolor sit amet.</div></a
-            >
+              <div class="card_img_text">MeetupMinds.</div>
           </div>
           <div class="card_context">
-            <div class="card-title">Title</div>
+            <div class="card-title">MeetupMinds</div>
             <div class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              ipsam nulla consectetur laborum minus beatae placeat facilis
-              minima qui accusamus!
+              its online & offline worshop program 
             </div>
-            <a href="#" class="btn"
+            <a target="blank" href="https://www.mini-market.in" class="btn"
               >Read more <span><i class="fa-solid fa-arrow-right"></i></span
             ></a>
           </div>
+        </div> </a
+        >
+
+
+        <div class="card">
+          <div class="card_img">
+            <a href="https://online-classes-f2r14exki-rajiv-kumars-projects.vercel.app/" target="blank">
+              <div class="card_img_pic">
+                <img
+                  src="https://startupbubble.news/wp-content/uploads/2023/07/boitumelo-6SZYEy4b5d0-unsplash-1024x577.jpg"
+                  alt="Placeholder Image"
+                />
+              </div>
+              <div class="card_img_text">Online course.</div>
+          </div>
+          <div class="card_context">
+            <div class="card-title">ECOLABS </div>
+            <div class="card-description">
+              online class web design
+            </div>
+            <a href="https://online-classes-f2r14exki-rajiv-kumars-projects.vercel.app/" target="blank" class="btn"
+              >Read more <span><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div></a
+          >
         </div>
+
+
         <div class="card">
           <div class="card_img">
             <a href="#">
               <div class="card_img_pic">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg"
                   alt="Placeholder Image"
                 />
               </div>
-              <div class="card_img_text">Lorem ipsum dolor sit amet.</div></a
+              <div class="card_img_text">Comming Soon</div></a
             >
           </div>
           <div class="card_context">
-            <div class="card-title">Title</div>
+            <div class="card-title">E-commerce</div>
             <div class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              ipsam nulla consectetur laborum minus beatae placeat facilis
-              minima qui accusamus!
-            </div>
-            <a href="#" class="btn"
-              >Read more <span><i class="fa-solid fa-arrow-right"></i></span
-            ></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card_img">
-            <a href="#">
-              <div class="card_img_pic">
-                <img
-                  src="https://via.placeholder.com/300"
-                  alt="Placeholder Image"
-                />
-              </div>
-              <div class="card_img_text">Lorem ipsum dolor sit amet.</div></a
-            >
-          </div>
-          <div class="card_context">
-            <div class="card-title">Title</div>
-            <div class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              ipsam nulla consectetur laborum minus beatae placeat facilis
-              minima qui accusamus!
+              E-commerce project
             </div>
             <a href="#" class="btn"
               >Read more <span><i class="fa-solid fa-arrow-right"></i></span
@@ -192,40 +191,24 @@
           <img src="./img/contact.png" alt="" srcset="" />
         </div>
         <div class="right_side">
-          <div>
-            <form action="/" method="post">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="comments">Comments</label>
-                <textarea
-                  id="comments"
-                  name="comments"
-                  placeholder="Your Comments"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit">Submit</button>
+          <div class="container">
+            <form id="contact-form" action="https://formspree.io/f/mqazzyrb" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Full Name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="Description" placeholder="Your Description" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
             </form>
-          </div>
+            <div id="success-message" class="hidden">Your message has been sent successfully!</div>
+        </div>
         </div>
       </div>
     </section>
@@ -234,7 +217,7 @@
       <div class="footer_container">
         <div class="footer_links">
           <div>
-            <a class="logo" href="">Portfolio</a>
+            <a class="logo" href="/">Rajiv</a>
           </div>
           <div>
             <ul>
@@ -247,7 +230,7 @@
         </div>
 
         <div class="copyright_footer">
-          <p>© <span id="this_year"></span> Portfolio</p>
+          <p>© <span id="this_year"></span> Portfolio All right reserved</p>
         </div>
       </div>
     </footer>

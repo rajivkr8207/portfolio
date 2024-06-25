@@ -77,11 +77,13 @@ window.addEventListener("mousemove", (e) => {
     display: "block",
     x: e.x,
     y: e.y,
-    duration: 0.5,
+    duration: 0.9,
     ease: "back.out",
   });
 });
-
+window.addEventListener("mouseleave", (e) => {
+  cursor.style.display = 'none'
+});
 gsap.from("#contact_section #contact_row .left_side", {
   duration: 1,
   x: -1000,
@@ -117,3 +119,39 @@ gsap.from("#skill_section .main_content_65 .right_col_side ", {
 
 const date = new Date().getFullYear();
 document.getElementById("this_year").innerHTML = date;
+
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var form = event.target;
+  
+  fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+          'Accept': 'application/json'
+      }
+  }).then(function(response) {
+      if (response.ok) {
+          document.getElementById('success-message').style.display = 'block';
+          form.reset();
+          setTimeout(() => {
+            document.getElementById('success-message').style.display = 'none';
+          }, 3000);
+          
+      } else {
+          return response.json().then(function(data) {
+              if (Object.hasOwnProperty.call(data, 'errors')) {
+                  alert(data['errors'].map(error => error['message']).join(", "));
+              } else {
+                  alert('Oops! There was a problem submitting your form');
+              }
+          });
+      }
+  }).catch(function(error) {
+      alert('Oops! There was a problem ssubmitting your form');
+  });
+});
+

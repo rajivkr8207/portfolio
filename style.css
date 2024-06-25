@@ -44,6 +44,11 @@ body {
   background: #fa4c20;
 }
 
+@media (max-width: 768px) {
+  .cursor_movement {
+    display: none;
+  }
+}
 header {
   width: 100%;
   background: #663399;
@@ -212,8 +217,8 @@ header nav #navlinks li a:hover {
 }
 #herosection .centerstyle button:hover {
   transform: scale(1.1);
-  background: #20fad8;
-  color: #35155d;
+  background: #663399;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -258,7 +263,7 @@ header nav #navlinks li a:hover {
 #skill_section .main_content_65 {
   width: 65%;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: space-around;
 }
 #skill_section .main_content_65 .left_col_side {
@@ -335,24 +340,6 @@ header nav #navlinks li a:hover {
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
-#skill_section .main_content_65 .right_col_side .fulldata button {
-  background: #fa5f20;
-  width: 30%;
-  color: white;
-  padding: 0.3rem;
-  font-size: small;
-  padding: 0.4rem 0.7rem;
-  font-weight: 600;
-  border-radius: 1rem;
-  font-weight: 500;
-  border: none;
-  transition: transform 0.2s ease-in;
-}
-#skill_section .main_content_65 .right_col_side .fulldata button:hover {
-  transform: scale(1.1);
-  background: #20fad8;
-  color: #35155d;
-}
 
 @media (max-width: 768px) {
   #skill_section {
@@ -368,13 +355,13 @@ header nav #navlinks li a:hover {
     margin: 0px 0.5rem;
   }
   #skill_section .main_content_65 .left_col_side .technical_content {
-    width: 80%;
+    width: 90%;
     margin: 2% auto;
   }
   #skill_section .main_content_65 .right_col_side {
     width: 85%;
     margin: 0.7rem auto;
-    padding: 0rem 0rem 0rem 1rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
   #skill_section .main_content_65 .right_col_side .fulldata {
     display: flex;
@@ -396,7 +383,7 @@ header nav #navlinks li a:hover {
 }
 #project_section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 1rem 0rem;
   margin: 1rem 0rem;
   background: #35155d;
@@ -497,7 +484,7 @@ header nav #navlinks li a:hover {
 }
 #contact_section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #663399;
   margin: 0.5rem 0rem;
   overflow: hidden;
@@ -532,7 +519,8 @@ header nav #navlinks li a:hover {
   justify-content: center;
   align-items: center;
 }
-#contact_section #contact_row .right_side div {
+#contact_section #contact_row .right_side .container {
+  position: relative;
   width: 100%;
 }
 #contact_section #contact_row .right_side form {
@@ -579,12 +567,28 @@ header nav #navlinks li a:hover {
 #contact_section #contact_row .right_side form button:hover {
   background-color: #fa4e09;
 }
+#contact_section #contact_row .right_side #success-message {
+  position: absolute;
+  top: -10%;
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}
+#contact_section #contact_row .right_side .hidden {
+  display: none;
+}
 
 @media (max-width: 768px) {
   #contact_section {
+    width: 100%;
     height: auto;
   }
   #contact_section #contact_row {
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
@@ -596,7 +600,7 @@ header nav #navlinks li a:hover {
   }
   #contact_section #contact_row .right_side {
     width: 100%;
-    margin: 1rem auto;
+    margin: 1rem 0rem;
   }
 }
 .footer {

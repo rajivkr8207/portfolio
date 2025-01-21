@@ -140,7 +140,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
           setTimeout(() => {
             document.getElementById('success-message').style.display = 'none';
           }, 3000);
-          
+            
       } else {
           return response.json().then(function(data) {
               if (Object.hasOwnProperty.call(data, 'errors')) {
